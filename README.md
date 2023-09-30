@@ -1,9 +1,9 @@
 # web-parallaxJS
 my porfolio web desighn with parallax effect using vanillaJS
 
-🚀 [Repository Name] - [Brief Description]
+🚀 Web Parallax - Personal web parallax
 
-Welcome to [Repository Name]! This is a [project type] aimed at [main project goal]. The project is built using [primary technology/stack], and we're excited to share what we've accomplished.
+Welcome to Web parallax! This is a personal project . The project is built using HTML, CSS, JS, and we're excited to share what we've accomplished.
 
 ℹ️ Key Features:
 - Free to use: no need license just use it
