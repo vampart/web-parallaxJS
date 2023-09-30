@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax Scroling Abdillah iqbal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a> 
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./300ppi/stars.png" id="stars">
+        <img src="./300ppi/moon.png" id="moon">
+        <img src="./300ppi/mountain_behind.png" id="mountain_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="./300ppi/mountain_front.png" id="mountain_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit scelerisque in. Pharetra diam sit amet nisl suscipit adipiscing. Elit pellentesque habitant morbi tristique senectus. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Nisl purus in mollis nunc sed. Leo vel orci porta non pulvinar neque. Turpis tincidunt id aliquet risus. Ac tortor vitae purus faucibus ornare suspendisse sed. Et sollicitudin ac orci phasellus egestas tellus. Malesuada pellentesque elit eget gravida cum sociis. Rhoncus mattis rhoncus urna neque. Integer feugiat scelerisque varius morbi enim nunc. Ut tortor pretium viverra suspendisse potenti nullam. Elementum facilisis leo vel fringilla est ullamcorper. Tortor id aliquet lectus proin nibh nisl condimentum id. Libero nunc consequat interdum varius. Morbi tempus iaculis urna id.
+        <br><br>
+        At imperdiet dui accumsan sit amet nulla facilisi. Blandit massa enim nec dui. Purus gravida quis blandit turpis cursus. A diam maecenas sed enim ut. Pulvinar proin gravida hendrerit lectus a. Elit ullamcorper dignissim cras tincidunt. Etiam dignissim diam quis enim lobortis scelerisque. Aliquet sagittis id consectetur purus ut. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper. Porta lorem mollis aliquam ut porttitor leo a. Dictum fusce ut placerat orci nulla pellentesque. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Sem viverra aliquet eget sit amet tellus.
+        <br><br>
+        Interdum consectetur libero id faucibus nisl. Cras sed felis eget velit aliquet sagittis id. Lorem ipsum dolor sit amet consectetur. Massa eget egestas purus viverra. Orci porta non pulvinar neque laoreet suspendisse. Pretium fusce id velit ut tortor pretium viverra. Risus ultricies tristique nulla aliquet enim tortor. Ipsum consequat nisl vel pretium lectus quam id leo. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Dictum sit amet justo donec enim diam. Diam sollicitudin tempor id eu nisl nunc mi. At urna condimentum mattis pellentesque. Fames ac turpis egestas integer eget aliquet nibh praesent. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aliquet enim tortor at auctor urna nunc id. Feugiat in fermentum posuere urna. Arcu odio ut sem nulla pharetra diam sit. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
+        <br><br>
+        Adipiscing enim eu turpis egestas pretium. Vitae nunc sed velit dignissim sodales ut. Nisl rhoncus mattis rhoncus urna neque viverra justo. Suscipit tellus mauris a diam maecenas sed enim ut sem. Eget arcu dictum varius duis at consectetur lorem donec. Ut tortor pretium viverra suspendisse potenti nullam. Eu augue ut lectus arcu. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Volutpat consequat mauris nunc congue. Consequat mauris nunc congue nisi vitae suscipit.
+        <br><br>
+        Id velit ut tortor pretium. Felis eget velit aliquet sagittis id consectetur purus. Fermentum iaculis eu non diam phasellus. A cras semper auctor neque. Aliquam sem et tortor consequat. Nisi lacus sed viverra tellus in hac habitasse. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sit amet volutpat consequat mauris. Viverra justo nec ultrices dui sapien. Senectus et netus et malesuada fames ac. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Amet commodo nulla facilisi nullam. Sodales ut eu sem integer vitae justo eget. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Nulla facilisi cras fermentum odio. In massa tempor nec feugiat nisl. Sit amet cursus sit amet dictum sit amet justo.</p>
+    </div>
+
+    <script type="text/javascript">
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountain_behind = document.getElementById('mountain_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountain_front = document.getElementById('mountain_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountain_behind.style.top = value * 0.5 + 'px';
+            mountain_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
